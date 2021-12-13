@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-and-view {
+  background: #00416a;
+  display: flex;
+  flex-direction: row;
+}
+
+form {
+  width: 450px;
+  margin: 20px;
+  padding: 20px;
+}
+
+form .form-field {
+  margin: 5px 20px;
+}
+
+form label {
+  display: inline-block;
+  width: 40%;
+  color: white;
+}
+
+input,
+textarea,
+select {
+  width: 60%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+  vertical-align: middle;
+}
+
+select {
+  width: 50%;
+}
+
+input[type="submit"],
+button {
+  background: darkgreen;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: rgb(45, 60, 19);
+}
+
+.container {
+  width: calc(90% - 450px);
+  margin: 20px;
+}
+
+.container h2 {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.notebook {
+  margin: 5px;
+}
+
+.notebook .noterow {
+  display: flex;
+}
+
+.notebook p {
+  display: inline-block;
+}
+
+.note-start {
+  background: rgb(240, 237, 223);
+  border: 1px solid grey;
+  border-right: 3px solid rgb(184, 24, 24);
+  width: 10%;
+  padding: 10px;
+  margin: 0px 1px;
+}
+
+.note-end {
+  background: rgb(240, 237, 223);
+  border: 1px solid grey;
+  border-left: 3px solid rgb(184, 24, 24);
+  width: 90%;
+  padding: 1rem;
+}
+
+.notebook span {
+  font-size: 1.4rem;
+}
+
+.notebook .hand {
+  padding-left: 20px;
+  font-family: Caveat;
+}
+
+.message {
+  background-color: antiquewhite;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: black;
+  opacity: 0.7;
+  overflow: auto;
+}
+
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 470px;
+  padding: 2rem;
+  z-index: 1;
+  background: white;
+  overflow: auto;
+}
+
+.popup p {
+  margin: 2rem 0;
+}
+
+.popup div {
+  display: flex;
+  justify-content: space-around;
+}
+.popup button {
+  width: 47%;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
